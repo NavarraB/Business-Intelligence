@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook original-version='18.1' source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Union (Glassdoor 2019-11 Median Pay Cities_Union)' inline='true' name='federated.05lhjs90s9au441g70ejq0l5a8fr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Glassdoor 2019-11 Median Pay Cities_Union' name='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/TOSHIBA/Downloads/Glassdoor 2019-11 Median Pay Cities_Union.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='Union' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='Job Category' />
+            <column datatype='string' name='Job Title' />
+            <column datatype='integer' name='Median Base Pay' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Atlanta' table='[Atlanta$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Boston' table='[Boston$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Chicago' table='[Chicago$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Houston' table='[Houston$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Los Angeles' table='[&apos;Los Angeles$&apos;]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='New York City' table='[&apos;New York City$&apos;]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Philadelphia' table='[Philadelphia$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='San Francisco' table='[&apos;San Francisco$&apos;]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Seattle' table='[Seattle$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Washington DC' table='[&apos;Washington DC$&apos;]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='Union' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='Job Category' />
+            <column datatype='string' name='Job Title' />
+            <column datatype='integer' name='Median Base Pay' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Atlanta' table='[Atlanta$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Boston' table='[Boston$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Chicago' table='[Chicago$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Houston' table='[Houston$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Los Angeles' table='[&apos;Los Angeles$&apos;]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='New York City' table='[&apos;New York City$&apos;]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Philadelphia' table='[Philadelphia$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='San Francisco' table='[&apos;San Francisco$&apos;]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Seattle' table='[Seattle$]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Washington DC' table='[&apos;Washington DC$&apos;]' type='table'>
+            <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+              <column datatype='string' name='Job Category' ordinal='0' />
+              <column datatype='string' name='Job Title' ordinal='1' />
+              <column datatype='integer' name='Median Base Pay' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Union]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Job Category]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Job Category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_246E911FA1C34E82948307AF822BFA54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Job Title]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Job Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_246E911FA1C34E82948307AF822BFA54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median Base Pay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Median Base Pay]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Median Base Pay</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_246E911FA1C34E82948307AF822BFA54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_246E911FA1C34E82948307AF822BFA54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_246E911FA1C34E82948307AF822BFA54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Union' datatype='table' name='[__tableau_internal_object_id__].[_246E911FA1C34E82948307AF822BFA54]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Union' id='_246E911FA1C34E82948307AF822BFA54'>
+            <properties context=''>
+              <relation all='true' name='Union' type='union'>
+                <columns header='yes'>
+                  <column datatype='string' name='Job Category' />
+                  <column datatype='string' name='Job Title' />
+                  <column datatype='integer' name='Median Base Pay' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Atlanta' table='[Atlanta$]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Boston' table='[Boston$]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Chicago' table='[Chicago$]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Houston' table='[Houston$]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Los Angeles' table='[&apos;Los Angeles$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='New York City' table='[&apos;New York City$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Philadelphia' table='[Philadelphia$]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='San Francisco' table='[&apos;San Francisco$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Seattle' table='[Seattle$]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.08egi2j0k2jz3p1gew0820yhnbzy' name='Washington DC' table='[&apos;Washington DC$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C85:no:A1:C85:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Job Category' ordinal='0' />
+                    <column datatype='string' name='Job Title' ordinal='1' />
+                    <column datatype='integer' name='Median Base Pay' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F10E6ABE-6CBE-41E5-921E-4BDE95B0A3D6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6C9D270-0837-44AE-8A82-A240EB539FE2}' />
+    </window>
+  </windows>
+</workbook>
